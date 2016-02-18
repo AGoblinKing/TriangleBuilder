@@ -24,6 +24,7 @@ class FollowCursor {
     if (!material) {
       material = new BABYLON.StandardMaterial('redWireframeMaterial', this.scene);
       material.backFaceCulling = false;
+      material.wireframe = true;
       material.ambientColor = new BABYLON.Color3(1, 1, 1);
     }
 
